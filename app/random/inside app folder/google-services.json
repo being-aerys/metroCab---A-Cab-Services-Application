@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "224405267743",
+    "project_id": "metrocabv2"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224405267743:android:5a9416f6fab3220f",
+        "android_client_info": {
+          "package_name": "com.shadowstorm.metrocab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBEL5jc1QmTlrgr_H9IodTNcLpYkglQ3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

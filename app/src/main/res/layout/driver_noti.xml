@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".CheckNotification">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Cab Requests"
+        android:id="@+id/textView31"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:gravity="fill_vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/driverlistlayout">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonDriverArrived"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/driver_noti_button_white"
+            android:text="ARRIVED"
+            android:fontFamily="calibri"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:onClick="iAmArrived"
+            android:clickable="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonDriverCompleted"
+            android:background="@drawable/driver_noti_button_white"
+            android:text="COMPLETED"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/buttonDriverArrived"
+            android:layout_toEndOf="@+id/buttonDriverArrived"
+            android:fontFamily="calibri"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:onClick="reachedDestination"
+            android:clickable="true"
+            android:layout_marginLeft="30dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="REJECT"
+            android:id="@+id/buttonDriverReject"
+            android:background="@drawable/driver_noti_button_red"
+            android:layout_below="@+id/buttonDriverArrived"
+            android:layout_toLeftOf="@+id/buttonDriverCompleted"
+            android:layout_toStartOf="@+id/buttonDriverCompleted"
+            android:layout_marginTop="10dp"
+            android:fontFamily="calibri"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:onClick="onCancelSessionClick" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="foobar"
+            android:id="@+id/buttonDriverReport"
+            android:background="@drawable/driver_noti_button_red"
+            android:layout_alignTop="@+id/buttonDriverReject"
+            android:layout_alignLeft="@+id/buttonDriverCompleted"
+            android:layout_alignStart="@+id/buttonDriverCompleted"
+            android:fontFamily="calibri"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="V I E W     O N     M A P "
+            android:id="@+id/buttonDriverMap"
+            android:background="@drawable/driver_noti_button_white"
+            android:fontFamily="sans-serif"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:textColor="#e39d06"
+            android:textSize="18sp"
+            android:layout_below="@+id/buttonDriverReject"
+            android:layout_alignLeft="@+id/buttonDriverReject"
+            android:layout_alignStart="@+id/buttonDriverReject"
+            android:layout_alignRight="@+id/buttonDriverReport"
+            android:layout_alignEnd="@+id/buttonDriverReport"
+            android:layout_marginTop="10dp"
+            android:onClick="onSessionMapClick" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/textView37"
+            android:background="#fff"
+            android:layout_below="@+id/paymentButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="REQUEST PAYMENT"
+            android:id="@+id/paymentButton"
+            android:background="@drawable/driver_noti_button_white"
+            android:fontFamily="sans-serif"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:textColor="#e39d06"
+            android:textSize="18sp"
+            android:onClick="makePayment"
+            android:layout_below="@+id/buttonDriverMap"
+            android:layout_alignLeft="@+id/buttonDriverMap"
+            android:layout_alignStart="@+id/buttonDriverMap"
+            android:layout_alignRight="@+id/buttonDriverMap"
+            android:layout_alignEnd="@+id/buttonDriverMap"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listDrivernoti"
+        tools:listitem="@layout/driver_noti_rows"
+        android:layout_below="@+id/driverlistlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+
+
+</RelativeLayout>

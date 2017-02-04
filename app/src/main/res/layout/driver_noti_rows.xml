@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@drawable/myselecter"
+
+        android:descendantFocusability="blocksDescendants"
+        android:layout_weight="0.05">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Name :"
+            android:id="@+id/textView32"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="3dp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Mr."
+            android:id="@+id/notiSalute"
+            android:layout_marginLeft="20dp"
+            android:layout_above="@+id/textView38"
+            android:layout_toRightOf="@+id/textView48"
+            android:layout_toEndOf="@+id/textView48"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="n/a"
+            android:id="@+id/notiFname"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/notiSalute"
+            android:layout_toEndOf="@+id/notiSalute"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="n/a"
+            android:id="@+id/notiLname"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/notiFname"
+            android:layout_toEndOf="@+id/notiFname"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Contact :"
+            android:id="@+id/textView38"
+            android:layout_below="@+id/textView32"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/notiContact"
+            android:layout_alignTop="@+id/textView38"
+            android:layout_alignLeft="@+id/notiSalute"
+            android:layout_alignStart="@+id/notiSalute" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Passenger's Destination:"
+            android:id="@+id/textView47"
+            android:layout_below="@+id/textView38"
+            android:layout_alignLeft="@+id/textView38"
+            android:layout_alignStart="@+id/textView38"
+            android:layout_marginTop="3dp"
+            android:textColor="#fff" /><![CDATA[
+        android:textColor="#fff" />
+
+
+
+
+
+        ]]>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Status :"
+            android:id="@+id/textView42"
+            android:textColor="#fff"
+            android:layout_above="@+id/textView47"
+            android:layout_toLeftOf="@+id/notiStatus"
+            android:layout_toStartOf="@+id/notiStatus"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pending"
+            android:id="@+id/notiStatus"
+            android:textColor="#e39d06"
+            android:layout_above="@+id/textView47"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="n/a"
+            android:id="@+id/notiMessage"
+            android:layout_alignStart="@+id/notiLocation"
+            android:layout_alignTop="@+id/textView48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="n/a"
+            android:id="@+id/notiDesti"
+
+            android:layout_alignBaseline="@+id/textView47"
+            android:layout_alignBottom="@+id/textView47"
+            android:layout_toEndOf="@+id/textView47" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="n/a"
+            android:id="@+id/notiLocation"
+            android:layout_alignBaseline="@+id/textView55"
+            android:layout_alignBottom="@+id/textView55"
+            android:layout_toEndOf="@+id/textView47" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Passenger's Location:"
+            android:id="@+id/textView55"
+
+            android:layout_marginTop="17dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/textView47"
+            android:layout_alignStart="@+id/textView48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Message :"
+            android:id="@+id/textView48"
+            android:layout_marginTop="12dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/textView55"
+            android:layout_alignStart="@+id/textView47" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

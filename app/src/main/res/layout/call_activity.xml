@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Cab Details"
+        android:id="@+id/textView25"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:gravity="fill_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text="New Text"
+        android:id="@+id/textView27"
+        android:background="#fff"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Driver Name :"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/callSalute"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/textView30"
+        android:layout_toRightOf="@+id/textView30"
+        android:layout_toEndOf="@+id/textView30"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/callFname"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/callSalute"
+        android:layout_toRightOf="@+id/callSalute"
+        android:layout_toEndOf="@+id/callSalute"
+        android:textColor="#fff"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/callLname"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/callFname"
+        android:layout_toRightOf="@+id/callFname"
+        android:layout_toEndOf="@+id/callFname"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cab Number :"
+        android:id="@+id/textView34"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView30"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/callCabNumber"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_alignLeft="@+id/callSalute"
+        android:layout_alignStart="@+id/callSalute" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Status :"
+        android:id="@+id/textView36"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView34"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/callStatus"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/textView36"
+        android:layout_alignLeft="@+id/callCabNumber"
+        android:layout_alignStart="@+id/callCabNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Distance :"
+        android:id="@+id/textView40"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView36"
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/callDistance"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/textView40"
+        android:layout_alignLeft="@+id/callStatus"
+        android:layout_alignStart="@+id/callStatus"
+        android:text="N/A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KM"
+        android:id="@+id/textView39"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/callDistance"
+        android:layout_toRightOf="@+id/callDistance"
+        android:layout_toEndOf="@+id/callDistance"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current Location :"
+        android:id="@+id/textView41"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView40"
+        android:layout_alignLeft="@+id/textView40"
+        android:layout_alignStart="@+id/textView40"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/callLocation"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/textView41"
+        android:layout_toRightOf="@+id/textView41"
+        android:layout_toEndOf="@+id/textView41"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:text="N/A" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text="New Text"
+        android:id="@+id/textViewNew"
+        android:layout_above="@+id/desti"
+
+        android:background="#fff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="away"
+        android:id="@+id/textView35"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:layout_above="@+id/textView41"
+        android:layout_toRightOf="@+id/textView39"
+        android:layout_toEndOf="@+id/textView39"
+        android:layout_marginLeft="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+        android:layout_marginBottom="15dp"
+        android:id="@+id/desti"
+        android:hint="Enter Your Destination "
+        android:layout_above="@+id/textView43"
+        android:layout_toEndOf="@+id/textView40" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/callPhone"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:typeface="monospace"
+        android:gravity="fill_vertical"
+        android:text="N/A"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView41" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Call the cab by phone :"
+        android:id="@+id/textView46"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:typeface="monospace"
+        android:gravity="fill_vertical"
+        android:layout_above="@+id/callPhone"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text="New Text"
+        android:id="@+id/textView2ndLine"
+
+        android:background="#fff"
+        android:layout_above="@+id/textView46"
+        android:layout_alignStart="@+id/callPhone" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Request Cab"
+        android:id="@+id/button"
+        android:onClick="sendNotiToDriver"
+        android:layout_above="@+id/textView46"
+        android:layout_alignEnd="@+id/desti" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Request cab using the button below"
+        android:id="@+id/textView44"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:typeface="monospace"
+        android:gravity="fill_vertical"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text="New Text"
+        android:id="@+id/textView43"
+        android:background="#fff"
+        android:layout_above="@+id/textView44"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MetroCabv2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="topAppName">MetroCab</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_network_location">NetworkLocation</string>
+    <string name="title_activity_my_address_location">MyAddressLocationActivity</string>
+    <string name="revGeocodeButtonText">Reverse Geocode Location</string>
+    <string-array name="user_salutation">
+        <item>Mr.</item>
+        <item>Ms.</item>
+        <item>Mrs.</item>
+        <item>Dr.</item>
+        <item>Er.</item>
+    </string-array>
+    <string-array name="user_type">
+        <item>Passenger</item>
+        <item>Driver</item>
+    </string-array>
+    <string name="undefined">Undefined</string>
+    <string name="click_the_button">Click the \'Red\' button</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="red">Menu</string>
+    <string name="green">Profile</string>
+    <string name="blue">Setting</string>
+    <string name="indigo">Exit</string>
+
+</resources>

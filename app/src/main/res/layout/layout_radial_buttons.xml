@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/btn_green"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:minWidth="75dp"
+        android:minHeight="75dp"
+        android:layout_gravity="left|bottom"
+        android:gravity="center"
+        android:background="@drawable/profile"
+        android:clickable="true"
+        android:text=""/>
+    <TextView
+        android:id="@+id/btn_blue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:minWidth="75dp"
+        android:minHeight="75dp"
+        android:layout_gravity="left|bottom"
+        android:gravity="center"
+        android:background="@drawable/transactionsicon"
+        android:clickable="true"
+        android:text=""/>
+    <TextView
+        android:id="@+id/btn_indigo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:minWidth="75dp"
+        android:minHeight="75dp"
+        android:layout_gravity="left|bottom"
+        android:gravity="center"
+        android:background="@drawable/logouticonnew"
+        android:clickable="true"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/btn_main"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:padding="8dp"
+        android:minWidth="75dp"
+        android:minHeight="75dp"
+        android:layout_gravity="left|bottom"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/menu"
+
+        android:text=""/>
+
+</FrameLayout>

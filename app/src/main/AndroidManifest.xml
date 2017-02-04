@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shadowstorm.metrocabv2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- this new codes is not implemented in aashis project ``````````````````````````````````````````````````` -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.example.shadowstorm.metrocabv2.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.shadowstorm.metrocabv2.permission.C2D_MESSAGE" />
+
+    <!-- ````````````up to here ````````go down```````````````````````````````````````````````````````````````````````````````` -->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAZGqwYLiD7YkH9YFVEJQn7HmAE1rip86E"
+
+            />
+
+        <activity
+            android:name=".LogInActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.UserActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SignUpActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MapsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MapsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Message">
+            <intent-filter>
+                <action android:name="android.intent.action.Message" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ShowPassengerOnMap">
+            <intent-filter>
+                <action android:name="android.intent.action.ShowPassengerOnMap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <activity
+            android:name=".ShowDriverOnMap">
+            <intent-filter>
+                <action android:name="android.intent.action.showDriverOnMap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".DriversMap">
+            <intent-filter>
+                <action android:name="android.intent.action.DriversMap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".NetworkLocation" >
+            <action android:name="android.intent.action.NetworkLocation" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity
+            android:name=".MyAddressLocationActivity" >
+            <action android:name="android.intent.action.MyAddressLocationActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+
+        <!-- this new codes is not implemented in aashis project ``````````````````````````````````````````````````` -->
+
+        <activity android:name=".ChangePassword"
+            android:screenOrientation="portrait">
+            <action android:name="android.intent.action.changePassword" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".ConfirmPhone"
+            android:screenOrientation="portrait">
+            <action android:name="android.intent.action.confirmPhone" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".CallActivity"
+            android:screenOrientation="portrait">
+            <action android:name="android.intent.action.callActivity" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".DriverPge"
+            android:screenOrientation="portrait">
+            <action android:name="android.intent.action.DriverPge" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".CheckNotification"
+            android:screenOrientation="portrait">
+            <action android:name="android.intent.action.checkNotification" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".views.ViewBalance"
+            android:screenOrientation="portrait">
+            <action android:name="android.intent.action.viewBalance" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity android:name=".views.ViewProfile"
+            android:screenOrientation="portrait">
+            <action android:name="android.intent.action.viewProfile" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.shadowstorm.metrocabv2" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".GCMPushReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".GCMRegistrationIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <!--/////////////////////////for paypal///////////////////////-->
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false"/>
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+
+
+
+
+    </application>
+
+</manifest>
